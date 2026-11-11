@@ -1,0 +1,17 @@
+[OK] Starting browser: chromium
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://tutorialsninja.com/demo/
+[TRACE] Tracing enabled - capturing screenshots and actions
+ Exception while clicking 'My Account': Locator.click: Error: strict mode violation: locator("a").filter(has_text="My Account") resolved to 2 elements:
+    1) <a title="My Account" data-toggle="dropdown" class="dropdown-toggle" href="https://tutorialsninja.com/demo/index.php?route=account/account">…</a> aka get_by_role("link", name=" My Account")
+    2) <a href="https://tutorialsninja.com/demo/index.php?route=account/account">My Account</a> aka get_by_role("link", name="My Account", exact=True)
+
+Call log:
+  - waiting for locator("a").filter(has_text="My Account")
+
+[RESULT] Test 'test_user_registration' result: [FAIL]
+[SAVE] Trace saved: reports/traces/test_user_registration_trace.zip
+[SAVE] Screenshot saved: reports/screenshots/test_user_registration.png
+[ATTACH] Screenshot attached to Allure report
+[ATTACH] Video attached to Allure report
+[CLEANUP] Closing browser context and stopping Playwright...
